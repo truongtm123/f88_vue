@@ -292,9 +292,7 @@ export default {
   text-decoration: none;
   color: #4682b4;
 }
-select {
-  cursor: pointer;
-}
+
 .formMoneyRecharge {
   width: 820px;
 }
