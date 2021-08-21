@@ -37,7 +37,7 @@ export default {
 #progressbar {
   margin-bottom: 30px;
   overflow: hidden;
-  width: 822px;
+  width: 100%;
 }
 #progressbar li.active {
   color: #3cb371;
