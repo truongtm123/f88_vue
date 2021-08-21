@@ -3,7 +3,7 @@
     <div class="recharge-header">
       <div class="row">
         <div class="col-md-6 col-lg-6 header-left payment-header">
-          <span><b>Nạp tiền tại quầy</b></span>
+          <span><b>Rút tiền tại quầy</b></span>
         </div>
         <div class="col-md-6 col-lg-6 header-right payment-header">
           <span
@@ -16,7 +16,7 @@
     <div class="recharge-content">
       <div id="content">
         <!-- progressbar -->
-        <ProgressBar textFirst="Nạp ví" />
+        <ProgressBar textFirst="Rút tiền" />
         <form class="formRecharge">
           <div class="form-group grItem">
             <label for="lblChoiceService">Chọn dịch vụ:</label>
@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="form-group grItemMoney">
-            <label for="lblRechargeMoney">Số tiền nạp:</label>
+            <label for="lblRechargeMoney">Số tiền muốn rút:</label>
           </div>
           <div class="input-group grItem formMoneyRecharge">
             <input
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="form-group grItem">
-            <label for="lblRechargeContent">Nội dung nạp tiền:</label>
+            <label for="lblRechargeContent">Nội dung rút tiền:</label>
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
@@ -108,7 +108,7 @@
               Nhập lại
             </button>
             <button class="recharge-button btn btn-secondary" type="submit">
-              <i class="fas fa-arrow-right"></i><span>Nạp tiền</span>
+              <i class="fas fa-arrow-right"></i><span>Rút tiền</span>
             </button>
           </div>
           <div class="col-lg-4 col-md-4"></div>
@@ -121,7 +121,7 @@
 <script>
 import ProgressBar from './ProgressBar.vue'
 export default {
-  name: "Recharge",
+  name: "WithDrawMoney",
   components: {
     ProgressBar
   },

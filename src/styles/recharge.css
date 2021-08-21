@@ -1,0 +1,223 @@
+/*For header */
+
+.formRecharge {
+    margin: 50px 0 0 10px;
+}
+
+.recharge-header {
+    height: 50px;
+    background-color: #f5f5f5;
+    padding-top: 13px;
+}
+
+.header-left span {
+    text-transform: uppercase;
+    margin: 10px 0 0 10px;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.header-right span {
+    margin: 0 10px 0 0;
+}
+
+
+/*End header */
+
+
+/* Begin form */
+
+.formRecharge label {
+    margin: 0;
+}
+
+.seachr-button-gr {
+    text-align: left;
+}
+
+.grItem {
+    margin: 20px -10px 0 -10px !important;
+    text-align: left;
+}
+
+.grItemMoney {
+    margin: 20px -10px -20px -10px !important;
+    text-align: left;
+}
+
+.grItemSearch {
+    margin: 120px 0 40px 0 !important;
+}
+
+.search-button,
+.search-button:hover,
+.search-button:active,
+.search-button:focus {
+    background-color: #6495ed !important;
+}
+
+.search-button span {
+    margin: 0 0 0 5px;
+}
+
+.recharge-button,
+.recharge-button:hover,
+.recharge-button:active,
+.recharge-button:focus {
+    background-color: #3cb371 !important;
+}
+
+.recharge-button span {
+    margin: 0 0 0 5px;
+}
+
+
+/* End form */
+
+
+/*For momo icon */
+
+.gr-momo {
+    background-color: #f5f5f5;
+    height: 250px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.image_list {
+    margin: 20px 0 0 20px;
+}
+
+.image_list img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-left {
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.menu ul li p {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+
+/*End for momo icon */
+
+.reset {
+    margin: 0 20px 0 0;
+}
+
+.content-recharge {
+    background-color: white;
+}
+
+#content {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    min-height: 820px;
+    max-width: 810px;
+    margin: 0 auto;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.comment {
+    font-size: 11px;
+    font-style: italic;
+    color: #d8d8d8;
+    margin-left: -10px;
+    font-weight: normal;
+}
+
+.comment-group {
+    text-align: left;
+}
+
+.gr-button {
+    background-color: #f5f5f5;
+    height: 80px;
+    margin: 40px -10px 20px 0 !important;
+    padding-top: 20px !important;
+}
+
+.gr-button .reset {
+    background-color: #dcdcdc;
+    border: 2px solid #f6f9fb;
+    color: black;
+    font-size: 12px;
+    opacity: 0.6;
+    font-weight: bold;
+    width: 92px;
+    height: 41px;
+}
+
+.reset,
+.reset:hover,
+.reset:active,
+.reset:focus {
+    background-color: #dcdcdc !important;
+    color: black;
+    font-size: 12px;
+    opacity: 0.6;
+    font-weight: bold;
+    width: 92px;
+    height: 41px;
+}
+
+.recharge-content {
+    padding-bottom: 10px;
+}
+
+.history {
+    margin: 0 0 0 10px;
+    font-size: 9px;
+    font-weight: bold;
+    font-style: normal;
+    color: #4682b4;
+}
+
+.history span {
+    margin-left: 5px;
+}
+
+.history span a {
+    text-decoration: none;
+    color: #4682b4;
+}
+
+.history span a:hover {
+    text-decoration: none;
+    color: #4682b4;
+}
+
+.formMoneyRecharge {
+    width: 820px !important;
+}
+
+.money-payment {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.payment-header span {
+    opacity: 0.6;
+}

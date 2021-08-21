@@ -1,7 +1,7 @@
 <template>
   <ul id="progressbar">
           <li class="active">
-            Nạp ví<i class="far fa-credit-card icon-process-w"></i>
+            {{textFirst}}<i class="far fa-credit-card icon-process-w" :class="classObject"></i>
           </li>
           <li class="">Xác nhận<i class="fas fa-flag icon-process"></i></li>
           <li class="">
@@ -14,7 +14,20 @@
 export default {
   name: 'ProgressBar',
   props: {
-    msg: String
+    textFirst: String
+  },
+  data(){
+    return{
+      
+    }
+  },
+  computed: {
+  classObject() {
+    let text =this.textFirst;
+    return {
+      'icon-process-w-left': text==="Nạp ví"
+    }
+  }
   }
 }
 </script>
@@ -67,12 +80,17 @@ export default {
 .icon-process-w {
   top: 0;
   position: absolute;
-  margin: 16px 0 0 -28px;
+  margin: 16px 0 0 -32px;
   width: 18px;
   height: 18px;
   transform: scale(1);
   opacity: 0.3;
 }
+.icon-process-w-left{
+  margin-left: -28px !important;
+}
+
+
 .icon-process-vee {
   top: 0;
   position: absolute;
