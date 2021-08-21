@@ -1,26 +1,27 @@
 <template>
   <div id="app">
     
-    <WithDrawMoney msg="Welcome to Your Vue.js App"/>
+    <PaymentInvoice msg="Welcome to Your Vue.js App"/>
     <!-- <WithDrawMoney msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import WithDrawMoney from './components/WithDrawMoney.vue'
+import PaymentInvoice from './components/PaymentInvoice.vue'
 
 
 export default {
   name: 'App',
   components: {
     // Recharge,WithDrawMoney
-    WithDrawMoney
+    PaymentInvoice
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "./styles/color.scss";
+@import "../src/styles/common.scss";
 #app{
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

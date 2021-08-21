@@ -51,17 +51,6 @@
             margin: 120px 0 40px 0 !important;
         }
         
-        .search-button,
-        .search-button:hover,
-        .search-button:active,
-        .search-button:focus {
-            background-color: $searchButton-color !important;
-        }
-        
-        .search-button span {
-            margin: 0 0 0 5px;
-        }
-        
         .recharge-button,
         .recharge-button:hover,
         .recharge-button:active,
@@ -115,10 +104,6 @@
         
         .reset {
             margin: 0 20px 0 0;
-        }
-        
-        .content-recharge {
-            background-color: white;
         }
         
         #content {
