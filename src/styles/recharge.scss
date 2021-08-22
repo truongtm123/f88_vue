@@ -50,17 +50,6 @@
         .grItemSearch {
             margin: 120px 0 40px 0 !important;
         }
-        
-        .recharge-button,
-        .recharge-button:hover,
-        .recharge-button:active,
-        .recharge-button:focus {
-            background-color: $green-button !important;
-        }
-        
-        .recharge-button span {
-            margin: 0 0 0 5px;
-        }
         /* End form */
         /*For momo icon */
         
@@ -91,7 +80,7 @@
         
         .menu ul li {
             padding: 10px 0 0 0;
-            border-bottom: 1px solid #a9a9a9;
+            border-bottom: 1px solid $menu-background;
         }
         
         .menu ul li p {

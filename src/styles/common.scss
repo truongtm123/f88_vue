@@ -1,4 +1,3 @@
-
 button {
     font-size: 12px;
     font-weight: bold;
@@ -27,4 +26,23 @@ select {
 
 .search-button span {
     margin: 0 0 0 5px;
+}
+
+.recharge-button,
+.recharge-button:hover,
+.recharge-button:active,
+.recharge-button:focus {
+    background-color: $green-button !important;
+}
+
+.recharge-button span {
+    margin: 0 0 0 5px;
+}
+
+input[type='checkbox'] {
+    background-color: $searchButton-color;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 0 !important;
 }
