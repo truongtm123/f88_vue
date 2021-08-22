@@ -16,10 +16,10 @@
 }
 
 .header-left span.vnd {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     margin: 10px 0 0px 5px;
-    color: #8B0000;
+    color: $vnd-color;
     opacity: 1;
 }
 
@@ -30,7 +30,11 @@
 .label-header {
     margin: 0 0 20px 0;
     font-size: 18px;
-    font-weight: normal;
+}
+
+.label-header-medium {
+    margin: 0 0 20px 20px;
+    font-size: 16px;
 }
 
 .invoice-info {
@@ -40,11 +44,11 @@
 
 .recharge-button {
     margin-right: 10px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .search-button {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .search-button-top {
@@ -120,15 +124,11 @@ table tr td {
 }
 
 .pagination_area {
-    margin: 10px 0 0 0;
+    margin: 10px -55px 0 0;
 }
 
 .pagination_area .row {
     margin-left: -20px;
-}
-
-.pagination nav {
-    float: right;
 }
 
 .grButton {

@@ -209,54 +209,39 @@
                       </p>
                     </div>
                     <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-6 col-md-6">
-                      <nav aria-label="...">
-                        <ul class="pagination">
-                          <li class="page-item disabled">
-                            <span class="page-link">Trang đầu</span>
-                          </li>
-                          <li class="page-item disabled">
-                            <span class="page-link">Previous</span>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">1</a>
-                          </li>
-                          <li class="page-item active">
-                            <span class="page-link">
-                              2
-                              <span class="sr-only">(current)</span>
-                            </span>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                          </li>
-                          <li class="page-item disabled">
-                            <span class="page-link">Trang cuối</span>
-                          </li>
-                        </ul>
-                      </nav>
+                    <div class="col-lg-6 col-md-6 pag-group">
+                      <ul class="pagination">
+                        <li><a href="#" class="disabled" :disabled="true"><span class="firstPage">Trang đầu</span></a></li>
+                        <li><a href="#"><i class='fas fa-angle-left'></i></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a class="active" href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#"><i class='fas fa-angle-right'></i></a></li>
+                        <li><a href="#"><span class="lastPage">Trang cuối</span></a></li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="form-group grItem">
-                <label for="lblAccountNum">Thanh toán</label>
-                <p class="footer-sum">Tổng số hóa đơn: <span class="number-footer-sum">0</span></p>
-                <p class="footer-sum">Tổng số tiền cần thanh toán: <span class="number-footer-sum">0</span></p>
+                <label for="lblAccountNum" class="label-header invoice-info1">Thanh toán</label>
+                <p class="label-header-medium">Tổng số hóa đơn: <span class="header-invoice">0</span></p>
+                <p class="label-header-medium">Tổng số tiền cần thanh toán: <span class="header-invoice">0</span></p>
             </div>
           </form>
           <div class="row gr-button">
               <div class="col-lg-2 col-md-2"></div>
               <div class="col-lg-8 col-md-8 grButton">
                 <button type="button" class="recharge-button btn btn-primary">
-                  <i class="fas fa-arrow-right"></i><span>Thanh Toán</span>
+                  <i class="far fa-credit-card"></i><span>Thanh Toán</span>
                 </button>
                 <button class="search-button btn btn-secondary" type="submit">
-                  <i class="fas fa-arrow-right"></i><span>In phiếu</span>
+                  <i class="fa fa-print" aria-hidden="true"></i><span>In phiếu</span>
                 </button>
               </div>
               <div class="col-lg-2 col-md-2"></div>

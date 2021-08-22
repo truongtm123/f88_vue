@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     
-    <Recharge msg="Welcome to Your Vue.js App"/>
+    <PaymentInvoice msg="Welcome to Your Vue.js App"/>
     <!-- <WithDrawMoney msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import Recharge from './components/Recharge.vue'
+import PaymentInvoice from './components/PaymentInvoice.vue'
 
 
 export default {
   name: 'App',
   components: {
     // Recharge,WithDrawMoney
-    Recharge
+    PaymentInvoice
   }
 }
 </script>

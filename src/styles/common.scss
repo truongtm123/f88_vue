@@ -1,48 +1,99 @@
-button {
-    font-size: 12px;
-    font-weight: bold;
-}
-
-label {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: bold;
-}
-
-select {
-    cursor: pointer;
-}
-
-.content-recharge {
-    background-color: white;
-}
-
-.search-button,
-.search-button:hover,
-.search-button:active,
-.search-button:focus {
-    background-color: $searchButton-color !important;
-}
-
-.search-button span {
-    margin: 0 0 0 5px;
-}
-
-.recharge-button,
-.recharge-button:hover,
-.recharge-button:active,
-.recharge-button:focus {
-    background-color: $green-button !important;
-}
-
-.recharge-button span {
-    margin: 0 0 0 5px;
-}
-
-input[type='checkbox'] {
-    background-color: $searchButton-color;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 0 !important;
-}
+    button {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    label {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+    }
+    
+    select {
+        cursor: pointer;
+    }
+    
+    .content-recharge {
+        background-color: white;
+    }
+    
+    .search-button,
+    .search-button:hover,
+    .search-button:active,
+    .search-button:focus {
+        background-color: $searchButton-color !important;
+    }
+    
+    .search-button span {
+        margin: 0 0 0 5px;
+    }
+    
+    .recharge-button,
+    .recharge-button:hover,
+    .recharge-button:active,
+    .recharge-button:focus {
+        background-color: $green-button !important;
+    }
+    
+    .recharge-button span {
+        margin: 0 0 0 5px;
+    }
+    
+    input[type='checkbox'] {
+        background-color: $searchButton-color;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        border-radius: 0 !important;
+    }
+    
+    // Paging
+    .pag-group {
+        text-align: right;
+    }
+    
+    ul.pagination {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul.pagination li {
+        display: inline;
+    }
+    
+    ul.pagination li a {
+        color: black;
+        float: left;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    ul.pagination li a.active {
+        background-color: $paging-bg-color;
+        color: $searchButton-color;
+        border-bottom: 2px solid $searchButton-color;
+    }
+    
+    ul.pagination li a:hover {
+        background-color: $paging-bg-color;
+        color: $searchButton-color;
+        border-bottom: 2px solid $searchButton-color;
+    }
+    
+    ul.pagination li a.disabled {
+        pointer-events: none;
+        color: $menu-background;
+        font-weight: normal;
+    }
+    
+    button span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    // End paging
