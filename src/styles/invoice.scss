@@ -12,7 +12,6 @@
 .header-left p {
     margin: 5px 0 0 10px;
     font-size: 17px;
-    opacity: 1;
 }
 
 .header-left span.vnd {
@@ -20,7 +19,6 @@
     font-weight: bold;
     margin: 10px 0 0px 5px;
     color: $vnd-color;
-    opacity: 1;
 }
 
 .grItem1 {
@@ -51,6 +49,10 @@
     opacity: 0.7;
 }
 
+.print-button {
+    background: $print-color !important;
+}
+
 .search-button-top {
     opacity: 1;
     padding-left: 17px;
@@ -73,11 +75,6 @@
     padding-bottom: 10px;
 }
 
-.label-header {
-    font-size: 18px;
-    font-weight: normal;
-}
-
 .menu ul {
     list-style: none;
 }
@@ -90,8 +87,12 @@
 .menu ul li p {
     font-size: 12px;
     font-style: normal;
+}
+
+.menu ul li p>label {
+    font-size: 12px;
+    font-style: normal;
     font-weight: bold;
-    opacity: 0.7;
 }
 
 .menu-right ul {

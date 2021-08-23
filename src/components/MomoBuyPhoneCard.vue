@@ -3,7 +3,7 @@
     <div class="recharge-header">
       <div class="row">
         <div class="col-md-3 col-lg-3 header-left payment-header">
-          <span><b>Thanh toán hóa đơn</b></span>
+          <span><b>Momo mua mã thẻ</b></span>
           <p>Số dư ví:<span class="vnd">+ VND</span></p>
         </div>
         <div class="col-md-9 col-lg-9 header-right payment-header">
@@ -37,7 +37,7 @@
               </div>
               <div class="col-lg-4 col-md-4">
                 <div class="form-group grItem">
-                  <label for="lblDivision">Đơn vị cung cấp:</label>
+                  <label for="lblDivision">Mệnh giá:</label>
                   <select
                     class="form-select"
                     aria-label="Default select example"
@@ -52,50 +52,37 @@
               </div>
               <div class="col-lg-5 col-md-5">
                 <div class="form-group grItem">
-                  <label for="lblCustomerId">Mã khách hàng/ Hợp đồng</label>
+                  <label for="lblCustomerId">Số lượng</label>
                   <div class="row">
                     <div class="col-lg-10 col-md-10">
                       <input
                         type="text"
                         class="form-control"
                         id="txtCustomerId"
-                        placeholder="Nhập mã khách, số HĐ..."
+                        placeholder="0"
                       />
                     </div>
                     <div class="col-lg-2 col-md-2">
-                          <button class="search-button-top search-button btn btn-secondary" type="button">
-                          <i class="fa fa-search"></i><span></span>
-                        </button>
                     </div>
-                    
-                
                   </div>
                 </div>
-                
               </div>
             </div>
             <div class="form-group grItem1">
               <label for="lblAccountNum" class="label-header">Thông tin đơn hàng</label>
               <div class="invoice-info">
                 <div class="row">
-                  <div class="col-lg-6 col-md-6">
+                  <div class="col-lg-12 col-md-12">
                     <div class="menu menu-left">
                       <ul>
-                        <li><p>Mã khách hàng:</p></li>
-                        <li><p>Tên khách hàng:</p></li>
-                        <li><p>Địa chỉ:</p></li>
+                        <li><p>Nhà mạng:</p></li>
+                        <li><p>Mệnh giá:</p></li>
+                        <li><p>Số lượng: <label>0</label></p></li>
+                        <li><p>Chiết khấu: <label>0</label></p></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="menu menu-right">
-                      <ul>
-                        <li><p>Số điện thoại:</p></li>
-                        <li><p>Email:</p></li>
-                        <li><p>Kỳ thanh toán:</p></li>
-                      </ul>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -115,12 +102,11 @@
                                 id="exampleCheck1"
                               />
                             </th>
-                            <th scope="col" class="header-invoice">Mã khách hàng</th>
-                            <th scope="col" class="header-invoice">Mã hóa đơn</th>
-                            <th scope="col" class="header-invoice">Số tiền</th>
-                            <th scope="col" class="header-invoice">Kỳ hóa đơn</th>
-                            <th scope="col" class="header-invoice">Kết quả</th>
-                            
+                            <th scope="col" class="header-invoice">Mã thẻ</th>
+                            <th scope="col" class="header-invoice">Serial thẻ</th>
+                            <th scope="col" class="header-invoice">Mệnh giá</th>
+                            <th scope="col" class="header-invoice">Ngày hết hạn</th>
+                            <th scope="col" class="header-invoice">Trạng thái</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -132,8 +118,8 @@
                                 id="exampleCheck1"
                               />
                             </td>
-                            <td>CUS000001</td>
-                            <td>INV0000001</td>
+                            <td>313124434455</td>
+                            <td>0005435435454</td>
                             <td>20.000 VND</td>
                             <td>08/2021</td>
                             <td>OK</td>
@@ -146,8 +132,8 @@
                                 id="exampleCheck1"
                               />
                             </td>
-                            <td>CUS000001</td>
-                            <td>INV0000001</td>
+                            <td>313124434455</td>
+                            <td>0005435435454</td>
                             <td>20.000 VND</td>
                             <td>08/2021</td>
                             <td>OK</td>
@@ -160,8 +146,8 @@
                                 id="exampleCheck1"
                               />
                             </td>
-                            <td>CUS000001</td>
-                            <td>INV0000001</td>
+                            <td>313124434455</td>
+                            <td>0005435435454</td>
                             <td>20.000 VND</td>
                             <td>08/2021</td>
                             <td>OK</td>
@@ -174,8 +160,8 @@
                                 id="exampleCheck1"
                               />
                             </td>
-                            <td>CUS000001</td>
-                            <td>INV0000001</td>
+                            <td>313124434455</td>
+                            <td>0005435435454</td>
                             <td>20.000 VND</td>
                             <td>08/2021</td>
                             <td>OK</td>
@@ -188,13 +174,12 @@
                                 id="exampleCheck1"
                               />
                             </td>
-                            <td>CUS000001</td>
-                            <td>INV0000001</td>
+                            <td>313124434455</td>
+                            <td>0005435435454</td>
                             <td>20.000 VND</td>
                             <td>08/2021</td>
                             <td>OK</td>
                           </tr>
-                          
                         </tbody>
                       </table>
                     </div>
@@ -230,7 +215,7 @@
             </div>
             <div class="form-group grItem">
                 <label for="lblAccountNum" class="label-header invoice-info1">Thanh toán</label>
-                <p class="label-header-medium">Tổng số hóa đơn: <span class="header-invoice">0</span></p>
+                <p class="label-header-medium">Tổng số thẻ: <span class="header-invoice">0</span></p>
                 <p class="label-header-medium">Tổng số tiền cần thanh toán: <span class="header-invoice">0</span></p>
             </div>
           </form>
@@ -255,7 +240,7 @@
 
 <script>
 export default {
-  name: "PaymentInvoice",
+  name: "MomoBuyPhoneCard",
   components: {},
   props: {
     msg: String,
@@ -270,4 +255,8 @@ export default {
 <style scoped lang="scss">
 @import "../styles/color.scss";
 @import "../styles/invoice.scss";
+
+.menu-left ul li {
+    margin-right: 20px;
+}
 </style>
