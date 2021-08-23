@@ -64,11 +64,9 @@
                     </div>
                     <div class="col-lg-2 col-md-2">
                           <button class="search-button-top search-button btn btn-secondary" type="button">
-                          <i class="fa fa-search"></i><span></span>
-                        </button>
+                            <i class="fa fa-search"></i><span></span>
+                          </button>
                     </div>
-                    
-                
                   </div>
                 </div>
                 

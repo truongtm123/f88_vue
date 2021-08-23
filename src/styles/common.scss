@@ -25,7 +25,7 @@
     }
     
     .search-button span {
-        margin: 0 0 0 5px;
+        // margin: 0 0 0 5px;
     }
     
     .recharge-button,
@@ -101,3 +101,16 @@
         font-size: 18px;
         font-weight: bold;
     }
+    
+    .download-button {
+        background-color: $background-color !important;
+        color: $download-button-bg !important;
+    }
+    
+    .download-button span {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 0 10px;
+    }
+    
+    
