@@ -10,6 +10,11 @@
             >Tổng đài gọi ra &amp; tổng đài tự động(voice call):
             <strong>Hotline hỗ trợ đối tác: (028) 73000406</strong></span
           >
+          <ul class="chat-group">
+            <li><div class="chat-item"><img src="../assets/images/icon/question_mark_icon.png" alt="Question"></div></li>
+            <li><div class="chat-item"><img src="../assets/images/icon/gift_icon.png" alt="Question"></div></li>
+            <li><div class="chat-item"><img src="../assets/images/icon/zalo_icon.png" alt="Question"></div></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -19,7 +24,7 @@
           <form class="content">
             <div class="row gr-transaction">
               <div class="col-lg-2 col-md-2 gr-item-ma">
-                <div class="form-group grItem">
+                <div class="form-group">
                   <label for="lblTransactionType">Loại giao dịch:</label>
                   <select
                     class="form-select"
@@ -116,7 +121,7 @@
               </div>
             </div>
             
-            <div class="form-group grItem">
+            <div class="form-group grItem gr2">
               <div class="transaction-info-detail">
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
@@ -124,43 +129,271 @@
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th scope="col" class="header-invoice">STT</th>
-                            <th scope="col" class="header-invoice">CH</th>
-                            <th scope="col" class="header-invoice">Tên NV giao dịch</th>
-                            <th scope="col" class="header-invoice">Số tài khoản</th>
-                            <th scope="col" class="header-invoice">Ngày giao dịch</th>
-                            <th scope="col" class="header-invoice">Loại giao dịch</th>
-                            <th scope="col" class="header-invoice">Mã giao dịch</th>
-                            <th scope="col" class="header-invoice">Số tiền</th>
-                            <th scope="col" class="header-invoice">Phí</th>
-                            <th scope="col" class="header-invoice">Nhà cung cấp</th>
-                            <th scope="col" class="header-invoice">Kênh giao dịch</th>
-                            <th scope="col" class="header-invoice">Trạng thái</th>
-                            <th scope="col" class="header-invoice">Nội dung</th>
-                            <th scope="col" class="header-invoice">Thao tác</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 3 + '%' }">STT</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">CH</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 5 + '%' }">Tên NV giao dịch</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Số<br>tài khoản</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Ngày<br>giao dịch</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 5 + '%' }">Loại<br>giao<br> dịch</th>
+                            <th scope="col" class="header-invoice process" v-bind:style="{ width: 10 + '%' }">Mã giao dịch</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 5 + '%' }">Số<br>tiền</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 4 + '%' }">Phí</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Nhà<br>cung<br>cấp</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">Kênh<br>giao dịch</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">Trạng<br>thái</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 13 + '%' }">Nội dung</th>
+                            <th scope="col" class="header-invoice process" v-bind:style="{ width: 13 + '%' }">Thao tác</th>
                           </tr>
                         </thead>
                         <tbody>
+                          
                           <tr>
-                            <td scope="row">1</td>
+                            <td scope="row" class="noNum">1</td>
                             <td>PTO0307.353.Tân Thành</td>
                             <td>Phạm Thị Bích Ngọc</td>
                             <td>0987469090</td>
                             <td>18-08-2021 19:58:43</td>
                             <td>Nạp tiền</td>
-                            <td>2108181957578731435</td>
+                            <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
                             <td class="">NCC001</td>
                             <td class="">POS</td>
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
-                            <td class="gr-button">
-                              <button class="detail-button btn btn-secondary" type="button">
-                                <i class="fa fa-search"></i><span>Chi tiết</span>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
                               </button>
-                              <button class="cancel-button btn btn-secondary" type="button">
-                                <i class="fa fa-search"></i><span>Hủy</span>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">2</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">3</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="sub-monney">-400.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td scope="row" class="noNum">4</td>
+                            <td>PTO0307.353.Tân Thành</td>
+                            <td>Phạm Thị Bích Ngọc</td>
+                            <td>0987469090</td>
+                            <td>18-08-2021 19:58:43</td>
+                            <td>Nạp tiền</td>
+                            <td class="noNum">2108181957578731435</td>
+                            <td><span class="monney">+500.000</span></td>
+                            <td class="fee">0</td>
+                            <td class="">NCC001</td>
+                            <td class="">POS</td>
+                            <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
+                            <td class="">1</td>
+                            <td class="gr-button-cancel">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                                <i class="fas fa-eye"></i>
+                                <span>Chi tiết</span>
+                              </button>
+                              <button type="button" class="cancel-button btn btn-primary detail-button-tab">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                <span>Hủy</span>
                               </button>
                             </td>
                           </tr>

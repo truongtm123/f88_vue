@@ -64,12 +64,6 @@
     margin-bottom: 10px;
 }
 
-table tr td {
-    font-size: 15px;
-    font-weight: normal;
-    color: $text-td-table;
-}
-
 .numPage {
     font-size: 15px;
     font-weight: bold;
@@ -88,10 +82,7 @@ table tr td {
     margin-top: 20px;
 }
 
-.gr-button {
-    background: $background-color;
-    height: 80px;
-}
+.gr-button {}
 
 .form-group {
     margin-top: 20px;
@@ -140,17 +131,79 @@ input[type="text"] {
 }
 
 .date-input {
-    width:120%;
+    width: 120%;
 }
-
 
 // For table
 .monney {
-    color: green;
-} // End table
-
-
-.data-input{
-    width:120%;
+    color: $status-table-color;
 }
 
+.sub-monney {
+    color: $vnd-color;
+}
+
+// End table
+.data-input {
+    width: 120%;
+}
+
+td.fee {
+    text-align: right;
+    padding: 15px 30px 0 0 !important;
+}
+
+span.status {
+    background-color: #008000 !important;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 5px;
+}
+
+.process {
+    text-align: center !important;
+}
+
+.noNum {
+    text-align: center !important;
+}
+
+.detail-button-tab {
+    margin-right: 5px !important;
+}
+
+.gr-button-cancel {
+    text-align: center !important;
+}
+
+.gr2 {
+    margin-top: -10px !important;
+}
+
+// For icon zalo chat
+.chat-group {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.chat-group li {
+    padding-bottom: 5px;
+}
+
+.chat-group .chat-item {
+    display: block;
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.chat-group .chat-item img {
+    width: 100%;
+    height: 100%;
+}
