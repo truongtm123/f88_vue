@@ -402,32 +402,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row pagination_area">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                      <p>
-                        Hiển thị <span class="numPage">1 - 10 </span>trong
-                        <span class="numPage"> 56 </span>bản ghi
-                      </p>
-                    </div>
-                    <div class="col-lg-3 col-md-3"></div>
-                    <div class="col-lg-6 col-md-6 pag-group">
-                      <ul class="pagination">
-                        <li><a href="#" class="disabled" :disabled="true"><span class="firstPage">Trang đầu</span></a></li>
-                        <li><a href="#"><i class='fas fa-angle-left'></i></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a class="active" href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#"><i class='fas fa-angle-right'></i></a></li>
-                        <li><a href="#"><span class="lastPage">Trang cuối</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <Pagination currentPageP="6" totalPageP="6" totalRecordP="56"/>
               </div>
             </div>
           </form>
@@ -439,12 +414,13 @@
 </template>
 
 <script>
+import Pagination from './Pagination.vue'
 import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
 
 export default {
   name: "ReportTransaction",
-  components: {DatePicker },
+  components: {DatePicker,Pagination },
   props: {
     msg: String,
   },

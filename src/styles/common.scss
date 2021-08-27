@@ -47,56 +47,6 @@
                 border-radius: 0 !important;
             }
             
-            // Paging
-            .pag-group {
-                text-align: right;
-            }
-            
-            ul.pagination {
-                display: inline-block;
-                padding: 0;
-                margin: 0;
-            }
-            
-            ul.pagination li {
-                display: inline;
-            }
-            
-            ul.pagination li a {
-                color: black;
-                float: left;
-                text-decoration: none;
-                cursor: pointer;
-                padding: 5px 10px;
-                text-decoration: none;
-                font-size: 12px;
-                font-weight: bold;
-            }
-            
-            ul.pagination li a.active {
-                background-color: $paging-bg-color;
-                color: $searchButton-color;
-                border-bottom: 2px solid $searchButton-color;
-            }
-            
-            ul.pagination li a:hover {
-                background-color: $paging-bg-color;
-                color: $searchButton-color;
-                border-bottom: 2px solid $searchButton-color;
-            }
-            
-            ul.pagination li a.disabled {
-                pointer-events: none;
-                color: $menu-background;
-                font-weight: normal;
-            }
-            
-            button span {
-                font-size: 15px;
-                font-weight: bold;
-            }
-            
-            // End paging
             .label-header {
                 font-size: 18px;
                 font-weight: bold;

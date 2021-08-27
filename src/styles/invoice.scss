@@ -118,14 +118,6 @@ table tr td {
     font-weight: bold;
 }
 
-.pagination_area {
-    margin: 10px -55px 0 0;
-}
-
-.pagination_area .row {
-    margin-left: -20px;
-}
-
 .grButton {
     text-align: center;
     margin-top: 20px;
@@ -138,4 +130,8 @@ table tr td {
 
 .form-group {
     margin-top: 20px;
+}
+
+table.table-striped>tbody>tr>td {
+    padding: 0.5rem 0.5rem !important;
 }
