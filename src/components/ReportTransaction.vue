@@ -131,7 +131,7 @@
                           <tr>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 3 + '%' }">STT</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">CH</th>
-                            <th scope="col" class="header-invoice" v-bind:style="{ width: 5 + '%' }">Tên NV giao dịch</th>
+                            <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Tên NV giao dịch</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Số<br>tài khoản</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 6 + '%' }">Ngày<br>giao dịch</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 5 + '%' }">Loại<br>giao<br> dịch</th>
@@ -142,18 +142,18 @@
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">Kênh<br>giao dịch</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 7 + '%' }">Trạng<br>thái</th>
                             <th scope="col" class="header-invoice" v-bind:style="{ width: 13 + '%' }">Nội dung</th>
-                            <th scope="col" class="header-invoice process" v-bind:style="{ width: 13 + '%' }">Thao tác</th>
+                            <th scope="col" class="header-invoice process" v-bind:style="{ width: 12 + '%' }">Thao tác</th>
                           </tr>
                         </thead>
                         <tbody>
                           
                           <tr>
                             <td scope="row" class="noNum">1</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -162,7 +162,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -174,11 +174,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">2</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -187,7 +187,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -199,11 +199,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">3</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="sub-monney">-400.000</span></td>
                             <td class="fee">0</td>
@@ -212,7 +212,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -224,11 +224,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -237,7 +237,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -249,11 +249,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -262,7 +262,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -274,11 +274,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -287,7 +287,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -299,11 +299,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -312,7 +312,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -324,11 +324,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -337,7 +337,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -349,11 +349,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -362,7 +362,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -374,11 +374,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td>PTO0307.353.Tân Thành</td>
-                            <td>Phạm Thị Bích Ngọc</td>
-                            <td>0987469090</td>
-                            <td>18-08-2021 19:58:43</td>
-                            <td>Nạp tiền</td>
+                            <td class='add-align'>PTO0307.353.Tân Thành</td>
+                            <td class="name-align">Phạm Thị Bích Ngọc</td>
+                            <td class='tel-align'>0987469090</td>
+                            <td class='name-align'>18-08-2021 19:58:43</td>
+                            <td class='tel-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -387,7 +387,7 @@
                             <td class=""><span class="alert alert-success status" role="alert">Thành công</span></td>
                             <td class="">1</td>
                             <td class="gr-button-cancel">
-                              <button type="button" class="detail-button btn btn-primary detail-button-tab">
+                              <button type="button" class="detail-button btn btn-primary detail-button-tab" @click="$bvModal.show('detail-transaction-modal')">
                                 <i class="fas fa-eye"></i>
                                 <span>Chi tiết</span>
                               </button>
@@ -403,6 +403,138 @@
                   </div>
                 </div>
                 <Pagination currentPageP="6" totalPageP="6" totalRecordP="56"/>
+                <div>
+                  <!-- Modal -->
+                  <b-modal id="detail-transaction-modal" hide-footer size="lg">
+                    <template #modal-title>
+                      Chi tiết giao dịch
+                    </template>
+                    
+                    <div class="row gr-detail1">
+                        <div class="col-lg-3 col-md-3">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="d-block gr-detail">
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                    <span class="left-label">Dịch vụ:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Loại giao dịch:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">Rút tiền</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Số tài khoản:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">19036411327014</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Tên tài khoản:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label account-name">Tạ mạnh trường</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Mã giao dịch:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">25656821113131131313113</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6 num1-money" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Số tiền:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label money-num">400,000</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Nội dung:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">momo</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label" >Trạng thái:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label alert alert-success status" role="alert">Thành công</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Mã lỗi:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">0</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                  <span class="left-label">Chi tiết lỗi:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <span class="right-label">Thành công</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  <button class="print-button btn btn-secondary print1-button right-label" type="submit">
+                                      <i class="fa fa-print" aria-hidden="true"></i><span>In phiếu</span>
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-6 col-md-6" v-bind:style="{'text-align': 'right' }">
+                                    <span class="left-label">Hóa đơn điện tử:</span>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row grButton">
+                      <div class="col-lg-10 col-lg-10">
+
+                      </div>
+                      <div class="col-lg-2 col-md-2 button-close">
+                        <b-button class="btn btn-secondary close-button" block @click="$bvModal.hide('detail-transaction-modal')">Đóng</b-button>
+
+                        
+                      </div>
+                    </div>
+                    
+                  </b-modal>
+                </div>
               </div>
             </div>
           </form>
@@ -451,5 +583,110 @@ export default {
 .mx-datepicker .mx-input {
     height: 38px;
     text-align: center;
+}
+
+ /* For modal */
+ .gr-detail-u{
+   list-style: none;
+ }
+ .button-close{
+   text-align: right;
+ }
+button.close{
+  background-color: transparent;
+    border: 0;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+.modal-header {
+    background-color: #dee2e6 !important;
+}
+
+.modal-title {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+.left-label{
+  font-size: 15px;
+    font-weight: normal;
+}
+.gr-detail .row{
+  margin: 0 0 10px 0 !important;
+}
+.right-label{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.account-name{
+  text-transform: uppercase;
+}
+.money-num{
+  font-size: 25px;
+    font-weight: bold;
+    color: #cc3300;
+}
+
+
+.print1-button,
+.print1-button:hover,
+.print1-button:active,
+.print1-button:focus {
+    background-color: #00cc99 !important;
+}
+
+.print1-button span{
+  margin-left: 5px;
+}
+.serivce{
+  margin: 0 0 10px 10px !important;
+}
+.num1-money{
+  padding-top: 10px;
+}
+.gr-detail1{
+      margin-top: 30px;
+}
+.gr-detail{
+      margin-top: 10px !important;
+}
+.serivce{
+      position: absolute;
+    top: 10px;
+}
+.invoice{
+  margin: 10px 0 0 -40px;
+}
+.gr-invoice{
+  padding-top: 40px;
+}
+.grButton{
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+}
+.close-button{
+      color: black !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    margin-right: 0 !important;
+    background-color: #f5f5f5 !important;
+    color: #333333 !important;
 }
 </style>

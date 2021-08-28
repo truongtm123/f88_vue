@@ -141,10 +141,10 @@ td.fee {
 }
 
 span.status {
-    background-color: #008000 !important;
+    background-color: $status-table-color !important;
     color: white;
-    padding: 2px 5px 2px 5px;
-    font-size: 15px;
+    padding: 0px 5px 2px 5px;
+    font-size: 10px;
     font-weight: normal;
     border-radius: 5px;
 }
@@ -193,4 +193,16 @@ span.status {
 .chat-group .chat-item img {
     width: 100%;
     height: 100%;
+}
+
+.name-align {
+    text-align: right;
+}
+
+.tel-align {
+    text-align: center;
+}
+
+.add-align {
+    text-align: left;
 }

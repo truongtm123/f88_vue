@@ -44,7 +44,6 @@
                 width: 25px;
                 height: 25px;
                 cursor: pointer;
-                border-radius: 0 !important;
             }
             
             .label-header {
@@ -79,7 +78,6 @@
             .detail-button {
                 background: $background-color !important;
                 border: 1px solid $border-table-color !important;
-                border-radius: 0 !important;
                 color: $detail-bg-color !important;
                 border: 1px solid $border-table-color !important;
             }
@@ -93,7 +91,6 @@
             .cancel-button {
                 background: $background-color !important;
                 border: 1px solid $border-table-color !important;
-                border-radius: 0 !important;
                 color: $vnd-color !important;
                 border: 1px solid $border-table-color !important;
             }
