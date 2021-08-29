@@ -402,7 +402,11 @@
                     </div>
                   </div>
                 </div>
-                <Pagination currentPageP="6" totalPageP="6" totalRecordP="56"/>
+                <Pagination currentPageP="6" totalPageP="6" totalRecordP="56" @clicked="onClickPaging"/>
+                <div v-if="isLoading===true">
+                  <Loading />
+                </div>
+                
                 <div>
                   <!-- Modal -->
                   <b-modal id="detail-transaction-modal" hide-footer size="lg">
@@ -543,16 +547,20 @@
       </div>
     </div>
   </div>
+  
+
 </template>
+
 
 <script>
 import Pagination from './Pagination.vue'
+import Loading from './Loading.vue'
 import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
 
 export default {
   name: "ReportTransaction",
-  components: {DatePicker,Pagination },
+  components: {DatePicker,Pagination,Loading },
   props: {
     msg: String,
   },
@@ -560,10 +568,15 @@ export default {
     return {
         startDateNow: new Date(),
         endDateNow: new Date(),
+        isLoading:false
     };
   },
   methods: {
-    
+    onClickPaging (value) {
+      this.isLoading=true;
+      document.body.classList.add('body-css')
+      console.log(value) // someValue
+    }
   }
 };
 </script>

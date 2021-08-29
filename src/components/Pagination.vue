@@ -20,43 +20,43 @@
                 <li><a href="#" :class="'disabled'" :disabled="true"><span :class="'firstPage'">Trang đầu</span></a></li>
             </template>
             <template v-else>
-              <li><a href="#" :class="''" :disabled="false" :value="1"><span :class="'firstPage'">Trang đầu</span></a></li>
+              <li><a href="#" :class="''" :disabled="false" :value="1" @click="pagination('1')"><span :class="'firstPage'">Trang đầu</span></a></li>
             </template>
             <template v-if="currentPage >=2">
-                <li><a href="#" :value="currentPagePre"><i class='fas fa-angle-left'></i></a></li>
+                <li><a href="#" :value="currentPagePre" @click="pagination(currentPagePre)"><i class='fas fa-angle-left'></i></a></li>
             </template>
             <template v-if="currentPage >=12">
-                <li><a href="#" :value="jumpPrevPage">{{jumpPrevPage}}</a></li>
+                <li><a href="#" :value="jumpPrevPage" @click="pagination(jumpPrevPage)">{{jumpPrevPage}}</a></li>
             </template>
             <template v-if="preNearTwoPage >0">
-                <li><a href="#" :value="preNearTwoPage">{{preNearTwoPage}}</a></li>
+                <li><a href="#" :value="preNearTwoPage" @click="pagination(preNearTwoPage)">{{preNearTwoPage}}</a></li>
             </template>
             <template v-if="preNearOnePage > 0">
-                <li><a href="#" :value="preNearOnePage">{{preNearOnePage}}</a></li>
+                <li><a href="#" :value="preNearOnePage" @click="pagination(preNearOnePage)">{{preNearOnePage}}</a></li>
             </template>
             <template v-if="currentPage > 0">
                 <li><a :class="classActive" href="#">{{currentPage}}</a></li>
             </template>
             <template v-if="nextOnePage <= totalPage">
-                <li><a href="#" :value="nextOnePage">{{nextOnePage}}</a></li>
+                <li><a href="#" :value="nextOnePage" @click="pagination(nextOnePage)">{{nextOnePage}}</a></li>
             </template>
             <template v-if="nextTwoPage <= totalPage">
-                <li><a href="#" :value="nextTwoPage">{{nextTwoPage}}</a></li>
+                <li><a href="#" :value="nextTwoPage" @click="pagination(nextTwoPage)">{{nextTwoPage}}</a></li>
             </template>
             <template v-if="totalPage - currentPage >= 4">
                 <li><a href="#">...</a></li>
             </template>
             <template v-if="jumpNextPage<totalPage">
-                <li><a href="#" :value="jumpNextPage">{{jumpNextPage}}</a></li>
+                <li><a href="#" :value="jumpNextPage" @click="pagination(jumpNextPage)">{{jumpNextPage}}</a></li>
             </template>
             <template v-if="currentPage!= totalPage">
-                <li><a href="#"><i class='fas fa-angle-right'></i></a></li>
+                <li><a href="#" @click="pagination(currentPageNext)"><i class='fas fa-angle-right'></i></a></li>
             </template>
             <template v-if="currentPage == totalPage">
                 <li><a href="#" :class="'disabled'" :disabled="true"><span :class="'lastPage'">Trang cuối</span></a></li>
             </template>
             <template v-else>
-                <li><a href="#" :class="''" :value="totalPage" :disabled="false"><span :class="'lastPage'">Trang cuối</span></a></li>
+                <li><a href="#" :class="''" :value="totalPage" :disabled="false" @click="pagination(totalPage)"><span :class="'lastPage'">Trang cuối</span></a></li>
             </template>
           </template>
         </ul>
@@ -99,7 +99,10 @@ export default {
        if(this.lastIndex > this.totalRecord){
           this.lastIndex=this.totalRecord;
        }
-     }
+     },
+     pagination (value) {
+      this.$emit('clicked', value)
+    }
  },
  beforeMount(){
     this.initPaging()
