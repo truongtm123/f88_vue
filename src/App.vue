@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     
-    <ReportTransaction msg="Welcome to Your Vue.js App"/>
+    <MomoChargePhoneCard msg="Welcome to Your Vue.js App"/>
     <!-- <WithDrawMoney msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import ReportTransaction from './components/ReportTransaction.vue'
+import MomoChargePhoneCard from './components/MomoChargePhoneCard.vue'
 
 
 export default {
   name: 'App',
   components: {
     // Recharge,WithDrawMoney
-    ReportTransaction
+    MomoChargePhoneCard
   }
 }
 </script>
