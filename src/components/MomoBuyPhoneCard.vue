@@ -226,8 +226,17 @@ export default {
     msg: String,
   },
   data() {
-    return {};
+    return {
+      isLoading:false
+    }
   },
+  methods: {
+    onClickPaging (value) {
+      this.isLoading=true;
+      document.body.classList.add('body-css')
+      console.log(value) // someValue
+    }
+  }
 };
 </script>
 

@@ -28,6 +28,17 @@ select {
     // margin: 0 0 0 5px;
 }
 
+.search-button-check,
+.search-button-check:hover,
+.search-button-check:active,
+.search-button-check:focus {
+    background-color: $green-button !important;
+}
+
+.search-button-check span {
+    margin: 0 0 0 5px !important;
+}
+
 .recharge-button,
 .recharge-button:hover,
 .recharge-button:active,

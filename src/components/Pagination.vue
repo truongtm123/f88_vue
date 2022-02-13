@@ -2,7 +2,7 @@
   <div>
     <div class="row pagination_area">
     <div class="row">
-      <div class="col-lg-3 col-md-3">
+      <div class="col-lg-5 col-md-5">
           <p v-if="totalRecord <=10">
           Hiển thị <span class="numPage">1 - 9 </span>trong
           <span class="numPage"> {{ totalRecord }} </span>bản ghi
@@ -12,7 +12,7 @@
           <span class="numPage"> {{ totalRecord  }} </span>bản ghi
         </p>
       </div>
-      <div class="col-lg-3 col-md-3"></div>
+      <div class="col-lg-1 col-md-1"></div>
       <div class="col-lg-6 col-md-6 pag-group">
         <ul class="pagination">
           <template v-if="totalPage >= 2">

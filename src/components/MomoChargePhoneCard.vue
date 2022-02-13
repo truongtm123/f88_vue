@@ -212,14 +212,22 @@
 import Pagination from './Pagination.vue'
 import Loading from './Loading.vue'
 export default {
-  name: "MomoBuyPhoneCard",
+  name: "MomoChargePhoneCard",
   components: {Pagination,Loading },
   props: {
     msg: String,
   },
   data() {
-    return {};
+    return {
+    isLoading:false};
   },
+  methods: {
+    onClickPaging (value) {
+      this.isLoading=true;
+      document.body.classList.add('body-css')
+      console.log(value) // someValue
+    }
+  }
 };
 </script>
 

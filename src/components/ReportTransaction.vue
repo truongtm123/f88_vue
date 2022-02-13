@@ -149,11 +149,11 @@
                           
                           <tr>
                             <td scope="row" class="noNum">1</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -174,11 +174,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">2</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -199,11 +199,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">3</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="sub-monney">-400.000</span></td>
                             <td class="fee">0</td>
@@ -224,11 +224,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -249,11 +249,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -274,11 +274,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -299,11 +299,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -324,11 +324,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -349,11 +349,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
@@ -374,11 +374,11 @@
                           </tr>
                           <tr>
                             <td scope="row" class="noNum">4</td>
-                            <td class='add-align'>PTO0307.353.Tân Thành</td>
-                            <td class="name-align">Phạm Thị Bích Ngọc</td>
-                            <td class='tel-align'>0987469090</td>
-                            <td class='name-align'>18-08-2021 19:58:43</td>
-                            <td class='tel-align'>Nạp tiền</td>
+                            <td class='left-align'>PTO0307.353.Tân Thành</td>
+                            <td class="right-align">Phạm Thị Bích Ngọc</td>
+                            <td class='center-align'>0987469090</td>
+                            <td class='right-align'>18-08-2021 19:58:43</td>
+                            <td class='center-align'>Nạp tiền</td>
                             <td class="noNum">2108181957578731435</td>
                             <td><span class="monney">+500.000</span></td>
                             <td class="fee">0</td>
